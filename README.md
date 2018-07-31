@@ -1,2 +1,2 @@
 # sysadmin-levelup
-scripts, templates, and notes to level up to system administration
+scripts, templates, and notes to level up your system administration
