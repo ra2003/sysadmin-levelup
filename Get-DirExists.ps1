@@ -2,7 +2,7 @@
 
 function Get-DirExists {
 
-    Get-Content "c:\users\kscrupa\documents\trainingroom.txt" | 
+    Get-Content "c:\users\you\documents\computers.txt" | 
         foreach {
             if (-not (Test-Connection -comp $_ -quiet)){
                 Write-host "$_ is down" -ForegroundColor Red
