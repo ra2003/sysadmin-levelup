@@ -1,3 +1,0 @@
-#in progress
-
-Get-WmiObject win32_printer -ComputerName lr011hpl | Format-List name,drivername,portname
