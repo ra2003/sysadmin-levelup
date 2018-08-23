@@ -10,7 +10,7 @@
 # $temp = Get-WmiObject -Class win32_videocontroller | Select-Object videomodedescription
 
 function Get-ScreenResolution {
-    $outfile = "c:\users\you\documents\Get-ScreenResolution-Output.csv"
+    $outfile = "c:\users\you\documents\Get-ScreenResolution-Output.txt"
     Write-Host "Online,Hostname,Username,x,y"
     #Add-Content -path $outfile -value "Online,Hostname,Username,x,y"
     Out-file -FilePath $outfile -InputObject "Online,Hostname,Username,x,y"
