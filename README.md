@@ -1,2 +1,2 @@
 # sysadmin-levelup
-scripts, templates, and notes to level up your system administration
+PowerShell, batch, and bash scripts, templates, and notes to level up your system administration
