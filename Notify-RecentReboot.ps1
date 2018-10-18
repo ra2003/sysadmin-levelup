@@ -1,6 +1,7 @@
 #Author: uniquegeek@gmail.com
 #Input: none
-#Output: emails the most recent reboot time (down/up) that occoured within cronWindow timeframe
+#Output: emails the most recent reboot time (down/up) that occoured within cronWindow timeframe.
+#     No email server or client install required.  Use PowerShell object to email.
 #Directions: run as a Windows scheduled task, or attach to an eventviwer event
 
 function Notify-RecentReboot {
