@@ -4,7 +4,7 @@
 #    WSH patches within cronWindow timeframe
 #Directions: run this as a Windows scheduled task every cronWindow minutes, or attach to an eventviwer event
 
-function Email-WSHpatch {
+function Notify-WSHpatch {
 #---treat like static vars
 #run this script at the frequency selected here
 #begin static vars
@@ -66,4 +66,4 @@ if (($wshPatchStart[0].TimeGenerated -ge $cutoff) -or ($wshPatchEnd[0].TimeGener
     }
 }
 
-Email-WSHpatch
+Notify-WSHpatch
