@@ -3,7 +3,7 @@
 #Output: emails the most recent reboot time (down/up) that occoured within cronWindow timeframe
 #Directions: run as a Windows scheduled task, or attach to an eventviwer event
 
-function Email-RecentReboot {
+function Notify-RecentReboot {
 #---treat like static vars
 #run this script at the frequency selected here
 $cronWindow = 60
@@ -49,4 +49,4 @@ if (($cutoff -le $downEvent[0].TimeGenerated) -or ($cutoff -le $upEvent[0].TimeG
     }
 }
 
-Email-RecentReboot
+Notify-RecentReboot
