@@ -1,7 +1,6 @@
 #uniquegeek@gmail.com
 #Input: computers.txt in same directory
-#    Also push the three GPO keys from Sophos kb 109668 first, so it will allow uninstall.
-#Output: List of computers,user logged in, whether remnants of Sophos Anti-Virus exists
+#Output: List of computers,user logged in, which remnants of Sophos Anti-Virus exists
 #
 # The file or folder we're checking is in the $destination variable
 
