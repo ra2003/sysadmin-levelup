@@ -1,7 +1,7 @@
 #Author: uniquegeek@gmail.com
 #Input: none
-#Output: emails most recent beginning and end times (and KBs) of 
-#    WSH patches within cronWindow timeframe
+#Output: emails most recent beginning and end times (and KBs) of WSH patches within cronWindow timeframe.
+#    No email server or client install required.  Uses PowerShell object to email.
 #Directions: run this as a Windows scheduled task every cronWindow minutes, or attach to an eventviwer event
 
 function Notify-WSHpatch {
