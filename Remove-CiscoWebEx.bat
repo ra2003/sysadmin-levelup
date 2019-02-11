@@ -1,6 +1,6 @@
 REM uniquegeek@gmail.com
 REM Purpose: Silently uninstall old Cisco WebEx (Meeting Manager, Access Anywhere, Remote Access Agent) with atcliun.exe
-REM    Silent uninstall is undocumented and I could not find or guess a switch with procexp.exe
+REM    Silent uninstall is undocumented and I could not find or guess a silent switch with procexp.exe
 REM    Please note this uninstalls versions that are casual users only (did not buy WebEx). 
 REM    i.e. This does not uninstall MSI versions.
 REM    This uninstalls versions with this regkey:
@@ -8,7 +8,7 @@ REM      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersio
 REM      "UninstallString"="C:\\PROGRA~3\\WebEx\\atcliun.exe"
 REM       where PROGRA~3 IS ProgramData
 REM    This does NOT uninstall the web plugin.
-REM    Does NOT require futzing around with SendKeys.
+REM    Does NOT require futzing around with SendKeys.  Uses simple batch file only, no imports need.
 REM
 REM Input: none
 REM Output: none
