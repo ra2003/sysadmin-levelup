@@ -41,7 +41,7 @@ if ($validate -eq "false") {
 #  (You can also cast a string object into System.DateTime with [DateTime] but I don't want to.)
     $rdate = $today = Get-Date
     #translate "today" into a day of the week 
-    if ($dow_i -eq $today) { $dow_i = $today.DayOfWeek }
+    if ($dow_i -eq "today") { $dow_i = $today.DayOfWeek }
     while ($rdate.DayOfWeek -ne $dow_i) {
         $rdate = $rdate.AddDays(1)
     }      
