@@ -18,7 +18,7 @@ $javaVer = Get-ChildItem -Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\Curr
 $multi = $javaVer -is [array]
 if ($multi) {
     ForEach ($ver in $javaVer) {
-    	If (($ver.UninstallString) -and ($ver.UninstallString -contains $curr_x86)) {
+    	If (($ver.UninstallString) -and ($ver.UninstallString -notmatch $curr_x86)) {
 		    $uninst = $ver.UninstallString
 		    Start-Process cmd -ArgumentList "/c $uninst /quiet /norestart" -Verb RunAs -Wait
 		}
